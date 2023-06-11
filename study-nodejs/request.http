@@ -1,0 +1,31 @@
+POST http://localhost:4002/product
+content-type: application/json
+
+{
+    "name": "Ipad Pro",
+    "price": 1100
+}
+
+###
+
+GET http://localhost:4002/product
+###
+
+GET http://localhost:4002/product/Macmini
+
+###
+
+PUT http://localhost:4002/product/9c8113d-5b4a-41f0-8ab2-59835c87e857
+content-type: application/json
+
+{
+    "name": "Ipad Pro",
+    "price": 999
+}
+
+###
+DELETE http://localhost:4002/product/e2ef6d08-7720-45f0-994e-a003994fa130
+
+
+
+###
