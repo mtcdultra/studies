@@ -2,16 +2,17 @@
 #### [Back to README.md](README.md)
 ---
 
+- [Scrum Guide](https://scrumguides.org/scrum-guide.html)
+- [Simulado Oficial](https://www.scrum.org/open-assessments/scrum-open)
+- [Simulado Gino Terentim](https://b.socrative.com/login/student/) - 82 questões - Room Name: SCRUMAOVIVO 
+- [Simulado PSPO](https://www.thescrummaster.co.uk/assessments/professional-scrum-product-owner-i-pspo-i-practice-assessment/) - 40 questões
+- [Simulado PSM](https://www.thescrummaster.co.uk/assessments/professional-scrum-master-i-psm-i-practice-assessment) - 40 questões
 
-https://scrumguides.org/scrum-guide.html \
-**Simulado Oficial:** https://www.scrum.org/open-assessments/scrum-open
-**Simulado:** https://b.socrative.com/login/student/ (82 questões) - Room Name: SCRUMAOVIVO \
-**Simulado PSPO:** https://www.thescrummaster.co.uk/assessments/professional-scrum-product-owner-i-pspo-i-practice-assessment/ (40 questões) \
-**Simulado PSM:** https://www.thescrummaster.co.uk/assessments/professional-scrum-master-i-psm-i-practice-assessment/ (40 questões) 
 
-**Prova**: é preciso acertar 85% das questões. 68 questões de 80 em 90 minutos, 1 tentativa. \
-**PSM I / PSPO I** / **PSD I** \
-*Fazer primeiro o exame de **PSM***
+
+**Prova**: necessário acertar 85% das questões. 68 questões de 80 em 90 minutos, 1 tentativa. \
+**PSM I / PSPO I** / **PSD I**
+
 ***
 
 Para gerar valor por meio de soluções adaptativas para problemas complexos \
