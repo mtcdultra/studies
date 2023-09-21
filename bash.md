@@ -13,11 +13,12 @@
 ---
 ## **Main commands:** 
 
-### **Directory**
+### **Directory/Files**
 - To show the current directory: ```pwd```
-- To show hidden files: ```ls -a```
+- To show hidden files: ```ls -a``` / ```ls -la```
 - To show files permissions: ```ls -l```
 - To show files permissions: ```ls -lh```
+- To show files permissions: ```ls -la file_name```
 ---
 - To remove an empty directory: ```rmdir directory_name```
 - To remove an directory and its contents: ```rm -r directory_name```
@@ -25,12 +26,14 @@
 - To create a directory: ```mkdir directory_name```
 - To copy a directory: ```cp -r directory_name new_directory_name```
 - To rename a directory: ```mv directory_name new_directory_name```
-### **Files**
+---
 - To remove a file: ```rm file_name```
-- To copy a file: ```cp file_name new_file_name```
-- To move a file: ```mv file_name new_file_name```
+- To copy a file: ```cp file_name folder_name```
+- To move a file: ```mv file_name folder_name```
 - To rename a file: ```mv file_name new_file_name```
 - To create a file: ```touch file_name```
+- Create a simple file: ```touch file_name.txt```
+- Create a file with date and time: ```touch `date +%Y-%m-%d-%H%M%S`.txt```
 ---
 - To show the content of a file: ```cat file_name```
 - To show the content of a file: ```less file_name```
@@ -56,3 +59,18 @@
 - To show the manual of a command: ```man command_name```
 - To show the history of commands: ```history```
 - To show date and time: ```date```
+### Users/Group
+- User id: ```id```
+- Domain name: ```hostname```
+- Create new user: ```adduser username```
+- Access the user: ```su username```
+- Access home directory: ```cd ~```
+- User exit: ```exit```
+---
+- Create new group: ```addgroup groupname```
+- Associate a group to a user: ```usermod -g groupname username```
+- Associate other groups to a user: ```usermod =a -G groupname username```
+
+### Installations (Ubuntu)
+- Install a package: ```apt-get install package_name```
+- Update a package: ```apt-get update package_name```
