@@ -39,7 +39,7 @@
 - To show the content of a file: ```less file_name```
 ---
 - To show type of a file: ```file file_name``` or ```file *```
-- To show more informations about the file: ```stat file_name```
+- To show more details about the file: ```stat file_name```
 - To send the output of a command to a file: ```command > file_name```
 ### **Search**
 - To search for a file: ```find . -name file_name```

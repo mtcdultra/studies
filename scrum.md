@@ -15,6 +15,11 @@
 
 ***
 
+***Verificar o Framework Nexus***
+https://scrumorg-website-prod.s3.amazonaws.com/drupal/2016-06/An%20Introduction%20to%20the%20Nexus%20Framework%20-%20June%202016_0.pdf
+
+***
+
 Para gerar valor por meio de soluções adaptativas para problemas complexos \
 Framework leve \
 Ajuda pesoas, times e organizações 
