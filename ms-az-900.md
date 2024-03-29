@@ -212,6 +212,7 @@ http://aka.ms/az-900
   - **Azure App Services**
     - Is a fully managed platform to build, deploy and scale web apps and APIs quickly
     - Works with .NET, .NET Core, Java, Node.js, PHP, and Python
+    - A PaaS offering
   - **Azure Container Services**
     - Are light-weight, virtualized environment that does not require operating system management, and respond to changes on demand
     - A PaaS offering that runs a container or pod of containers in Azure
@@ -233,22 +234,23 @@ http://aka.ms/az-900
 - **Azure Virtual Network (VNet)**
 
   - Enables Azure **resources to communicate with each other**, the internet, and on-premises networks
-  - Types:
+  - **Endpoints**:
     - **Public endpoints**
     - **Private endpoints**
     - **Virtual subnets** (segment your network to suit your needs)
     - **Network peering** (connect your private networks directly together)
 
 - **Azure VPN Gateway**
+
   - Is used to send encrypted traffic between an Azure VNet and an on-premises location over the public internet
 
-* **Azure ExpressRoute**
+- **Azure ExpressRoute**
 
   - Extends on-premises networks into Azure over a private connection that is facilitated by a connectivity provider
   - In **VPN Gateway** uses public internet but in **ExpressRoute** uses dedicated connection
   - More performance and secure
 
-* **Azure DNS**
+- **Azure DNS**
   - Reliability and performance
   - Azure DNS security
   - Ease of use
@@ -257,6 +259,272 @@ http://aka.ms/az-900
 
 ## 4. Azure storage
 
+### 4.1. Storage services
+
+- **Storage accounts**
+  - Must have a globally unique name
+  - Provide over-the-internet access worldwide (over HTTP or HTTPS)
+  - Determine storage services and redundancy options
+
+### 4.2. Redundancy options
+
+| Redundancy config. | Deployment                      | Durability |
+| ------------------ | ------------------------------- | ---------- |
+| LRS                | 1 dc in the pr                  | 11 nines   |
+| ZRS                | 3 az in the pr                  | 12 nines   |
+| GRS                | 1 dc in the pr and sr           | 16 nines   |
+| GZRS               | 3 az in the pr and a 1 dc in sr | 16 nines   |
+
+_dc: datacenter / pr: primary region / sc: secondary region / az: availability zones_
+
+![alt text](storage_redundancy.jpg)
+
+### 4.3. File management and migration
+
+#### File management
+
+- **Azure Blob (container storage)**
+  - Optimized for storing massive of unstructured data, such as text or binary data
+  - https://storage-name.blob.core.windows.net
+- **Azure Disk (disk storage)**
+  - Disks for VM, applications, and other services to access and use
+  - https://storage-name.dfs.core.windows.net
+- **Azure Queue**
+  - Message storage service
+  - https://storage-name.queue.core.windows.net
+- **Azure Files**
+  - Available network file share (using SMB protocol)
+  - https://storage-name.file.core.windows.net
+- **Azure Tables**
+  - Key/attribute option for structured non-relational data storage
+  - https://storage-name.table.core.windows.net
+- **Azure storage access tiers** (cans witch tiers at any time)
+  - |    Hot     | Cool | Cold | Archive |
+    | :--------: | :--: | :--: | :-----: |
+    | Frequently | 30d  | 90d  |  180d   |
+
+#### File management options
+
+- **AzCopy**
+  - Command line utility
+  - Copy blobs or files to or from storage account
+  - One-direction synchronization
+- **Azure Storage Explorer**
+  - Graphical UI (compatible with Win, Linux and MacOS)
+  - Uses AzCopy to handle file operations
+- **Azure File Sync**
+  - Synchronizes Azure and on-premises in bidirectional manner
+
+#### Migration (for large scale)
+
+- **Azure Migrate**
+
+  - Unified migration platform
+  - Range of integrated and standalone tools
+  - Assessment and migration
+
+- **Azure Data Box**
+  - Physical migration
+  - Store up to 80 TB of data
+  - Migrate data **out of Azure** for compliance or regulatory needs
+  - Migrate data **to Azure** from remote locations with limited or no connectivity
+
 ## 5. Azure identity, access, and security and Azure cost management
 
+### 5.1. Identity, access, and security
+
+#### Directory services
+
+- **Microsoft Entra ID**
+  - Azure cloud-based identity and access management service
+    - Authentication (employees sig-in to access resources)
+    - Single sign-on
+    - Application management
+    - B2B
+    - Device management
+- **Microsoft Entra Domain Services**
+  - Run legacy applications in the cloud
+  - Cloud-based domain services without managing domain controllers
+
+#### Authentication methods
+
+- **Authentication**
+  - Identifies the person or service
+  - Requests legitimate access credentials
+  - Authentication methods:
+    - Standard password
+    - SSO
+    - MFA (require two or more elements for full authentication)
+    - Passwordless
+- **Authorization**
+
+  - Determines ans authenticated person's or service's level of access
+  - Defines which data they can access, and what they can do with it
+
+#### B2B / B2C
+
+- **Microsoft Entra External ID B2B**
+  - Partners, vendors, etc (Google, Meta, etc) --> Invitation or self-service sign-up --> Microsoft Entra External ID (tenant)
+- **External Identities B2C**
+  - Consumers of your published app --> Sign-up and sign-in user flows --> B2C tenant
+
+#### Conditional Access
+
+- Is used to bring signals together, to make decisions, and enforce organizational polices
+- Based on:
+  - User or Group membership
+  - IP location
+  - Device
+  - Application
+  - Risk detection
+
+#### Role-based access control (RBAC)
+
+- Fine-grained access management
+- Segregate duties within the team and grant only amount of access to users that they need to perform their jobs
+- There are 4 fundamentals roles:
+  - Owner
+  - Contributor
+  - Reader
+  - User access administrator
+
+#### Defense in depth
+
+- Provides multiple levels if protection
+- Attacks against one layer are isolated from subsequent layers
+- **Layers**:
+  - Physical security
+  - Identity & Access
+  - Perimeter
+  - Network
+  - Compute
+  - Application
+  - Data
+
+#### Security models
+
+- **Zero Trust**
+  - Protect assets anywhere with central policy
+
+#### Microsoft Defender for Cloud
+
+- Is a monitoring service that provides threat protection across Azure and on-premises datacenters
+- Provides security recommendations
+- Detect and block malware
+- Analyze and identify potential attacks
+- Just-in-time access control for ports
+
+### 5.2. Cost management
+
+#### Factors affecting costs
+
+|               |                 |              |
+| ------------- | --------------- | ------------ |
+| Resource type | Consumption     | Maintenance  |
+| Geography     | Network traffic | Subscription |
+|               |                 |              |
+
+#### Azure Marketplace
+
+- Allows customers to find, try, purchase, and provision apps and services
+
+#### Cost and pricing calculators
+
+- **Pricing Calculator**
+  - Is a tool that helps to estimate the cost of Azure products
+- **Total Cost of Ownership Calculator (TCO)**
+  - Estimate cost to migrate to Azure
+  - Compare costs of on-premises and Azure
+
+#### Cost management and tags
+
+- **Microsoft Cost Management**
+
+  - Allow to see all resources costs used on Azure
+  - Alerting when cost exceed limits
+  - Cost recommendations
+
+- **Tags**
+  - Very useful for rolling up billing information
+  - Provides metadata for you resources
+
 ## 6. Azure governance and compliance, Azure resource management, and Azure monitoring services
+
+### Governance and compliance
+
+#### Policies and resources locks
+
+##### **Microsoft Purview**
+
+- **Is a family of data governance, risk, and compliance solutions**
+- Brings insights about on-promises, multi-cloud, and SaaS data together
+
+##### **Azure Policy**
+
+- Helps to enforce organizational standards and to assess compliance at-scale
+- Provide governance and resource consistency with regulatory compliance, security, cost and management
+- Evaluates and identifies resources that don't comply with your policies
+- Can be inherited
+
+##### **Resource locks**
+
+- Protect resources from accidental deletion or modification
+- Can be manage at:
+  - Subscription
+  - Resource group
+  - Individual levels
+- | Lock Types | Read | Update | Delete |
+  | ---------- | :--: | :----: | :----: |
+  | Delete     |  Y   |   Y    |   N    |
+  | ReadOnly   |  Y   |   N    |   N    |
+
+#### Service Trust portal
+
+- A portal that provides access to various content, tools, and other resources about Microsoft security, privacy, and compliance practices.
+
+### Resource deployments tools
+
+#### Tools for interacting with Azure
+
+- **Azure Portal**
+- **Azure Cloud Shell** (Browser-based shell)
+- **Azure PowerShell**
+- **CLI**
+
+#### Azure Arc
+
+- Simplifies governance and management by delivering a consistent multi-cloud and on-premises management platform.
+- Azure Arc allows you to manage the following resource types hosted outside of Azure:
+  - Servers
+  - Kubernetes clusters
+  - Azure data services
+  - SQL Server
+  - Virtual machines (preview)
+
+#### Azure Resource Manager (ARM)
+
+- Provides a management layer that enables to create, update, and delete resources
+- **ARM templates**
+  - Are JSON files that can be used to create and deploy Azure infrastructure without having to write programming commands
+
+#### Infrastructure as code
+
+- Manage configuration at scale
+- Rapidly provision additional environments based on a standard configuration and build
+
+### Monitoring tools
+
+#### Azure Advisor
+
+- Analyzes deployed Azure resources and makes recommendations based on best practices to optimize Azure deployments
+
+#### Azure Service Health
+
+- Collection of services that keep informed of general Azure status
+  - **Azure Status** (global view of all services)
+  - **Service Health** (focused only the services and regions)
+  - **Resource Health** (information about individual cloud resources)
+
+#### Azure Monitor
+
+- Maximizes the availability and performance of applications and services by collecting, analyzing, and acting on telemetry fro cloud and on-premises environments
