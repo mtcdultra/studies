@@ -450,7 +450,7 @@ _dc: datacenter / pr: primary region / sc: secondary region / az: availability z
 
 ## 6. Azure governance and compliance, Azure resource management, and Azure monitoring services
 
-### Governance and compliance
+### 6.1. Governance and compliance
 
 #### Policies and resources locks
 
@@ -482,7 +482,7 @@ _dc: datacenter / pr: primary region / sc: secondary region / az: availability z
 
 - A portal that provides access to various content, tools, and other resources about Microsoft security, privacy, and compliance practices.
 
-### Resource deployments tools
+### 6.2. Resource deployments tools
 
 #### Tools for interacting with Azure
 
@@ -512,7 +512,7 @@ _dc: datacenter / pr: primary region / sc: secondary region / az: availability z
 - Manage configuration at scale
 - Rapidly provision additional environments based on a standard configuration and build
 
-### Monitoring tools
+### 6.3. Monitoring tools
 
 #### Azure Advisor
 
