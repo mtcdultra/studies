@@ -1,5 +1,7 @@
 # Contribute to an open-source project on GitHub
 
+[Return Readme](../README.md)
+
 1. [x] Introduction
 2. [x] Identify where you can help
 3. [x] Contribute to an open-source repository

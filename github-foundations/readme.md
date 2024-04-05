@@ -8,7 +8,6 @@
 
 > [Certification Study Guide](https://techcommunity.microsoft.com/t5/educator-developer-blog/github-foundations-certification-study-guide/ba-p/4079056)
 
-
 | Domain Breakdown                                | Exam Percentage |
 | ----------------------------------------------- | --------------- |
 | Domain 1: Introduction to Git and GitHub        | 22%             |
@@ -18,48 +17,25 @@
 | Domain 5: Project Management                    | 7%              |
 | Domain 6: Privacy, Security, and Administration | 10%             |
 | Domain 7: Benefits of the GitHub Community      | 10%             |
-|  |
+|                                                 |
 
 ---
 
-1. [Introduction to Git](chap_1.md)
-2. [Como criar e modificar um projeto Git](chap_2.md)
-   1. [x] Introdução
-   2. [x] Exercício – Iniciar um projeto
-   3. [x] Exercício – Fazer alterações e rastreá-las com o Git
-   4. [x] Corrigir erros simples
-   5. [x] Exercício – Usar o Git para corrigir erros
-   6. [x] Verificação de conhecimentos
-   7. [x] Resumo
-3. [Colaborar com o Git](chap_3.md)
-   1. [x] Introdução
-   2. [x] Colaboração usando um comando de pull
-   3. [x] Exercício – Clonar um repositório
-   4. [x] Exercício – Fazer uma solicitação de pull
-   5. [x] Exercício – Colaborar com outras pessoas usando um repositório compartilhado
-   6. [x] Verificação de conhecimentos
-   7. [x] Resumo
-4. [Editar código por meio de branches e mesclagem no Git](chap_4.md)
-   1. [x] Introdução
-   2. [x] Branches no Git
-   3. [x] Exercício – Criar um branch como Alice
-   4. [x] Exercício – Mesclar branch de Bob
-   5. [x] Exercício – Resolver conflitos de mesclagem
-   6. [x] Verificação de conhecimentos
-   7. [x] Resumo
-5. [Introduction to GitHub](chap_5.md)
-6. [Introduction to GitHub's products](chap_6.md)
-7. [Introduction to GitHub Copilot](chap_7.md)
-8. [Code with GitHub Codespaces](chap_8.md)
-9. [Manage your work with GitHub Projects](chap_9.md)
-10. [Communicate effectively on GitHub using Markdown](chap_10.md)
-11. [Contribute to an open-source project on GitHub](chap_11.md)
-12. [Manage an InnerSource program by using GitHub](chap_12.md)
-13. Maintain a secure repository by using GitHub best practices
-14. Introduction to GitHub administration
-15. Authenticate and authorize user identities on GitHub
-16. Manage repository changes by using pull requests on GitHub
-17. Search and organize repository history by using GitHub
-18. Using GitHub Copilot with Python
-
-
+1. [Introduction to Git](chpts/chpt_01.md)
+2. [Como criar e modificar um projeto Git](chpts/chpt_02.md)
+3. [Colaborar com o Git](chpts/chpt_03.md)
+4. [Editar código por meio de branches e mesclagem no Git](chpts/chpt_04.md)
+5. [Introduction to GitHub](chpts/chpt_05.md)
+6. [Introduction to GitHub's products](chpts/chpt_06.md)
+7. [Introduction to GitHub Copilot](chpts/chpt_07.md)
+8. [Code with GitHub Codespaces](chpts/chpt_08.md)
+9. [Manage your work with GitHub Projects](chpts/chpt_09.md)
+10. [Communicate effectively on GitHub using Markdown](chpts/chpt_10.md)
+11. [Contribute to an open-source project on GitHub](chpts/chpt_11.md)
+12. [Manage an InnerSource program by using GitHub](chpts/chpt_12.md)
+13. [Maintain a secure repository by using GitHub best practices](chpts/chpt_13.md)
+14. [Introduction to GitHub administration](chpts/chpt_14.md)
+15. [Authenticate and authorize user identities on GitHub](chpts/chpt_15.md)
+16. [Manage repository changes by using pull requests on GitHub](chpts/chpt_16.md)
+17. [Search and organize repository history by using GitHub](chpts/chpt_17.md)
+18. [Using GitHub Copilot with Python](chpts/chpt_18.md)

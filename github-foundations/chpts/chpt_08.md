@@ -1,5 +1,7 @@
 # Code with GitHub Codespaces
 
+[Return Readme](../README.md)
+
 1. [x] Introduction
 2. [x] The Codespace lifecycle
 3. [x] Personalize your Codespace

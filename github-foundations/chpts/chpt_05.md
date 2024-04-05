@@ -1,5 +1,7 @@
 # Introduction to GitHub
 
+[Return Readme](../README.md)
+
 1. [x] Introduction
 2. [x] What is GitHub?
 3. [x] Components of the GitHub flow

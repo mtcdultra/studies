@@ -1,5 +1,7 @@
 # Introduction to Git
 
+[Return Readme](../README.md)
+
 1. [x] Introduction
 2. [x] What is version control?
 3. [x] Exercise – Try out Git

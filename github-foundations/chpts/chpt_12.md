@@ -1,10 +1,12 @@
 # Manage an InnerSource program by using GitHub
 
-1. [ ] Introduction
-2. [ ] How to manage a successful InnerSource program
-3. [ ] Exercise - InnerSource fundamentals
-4. [ ] Knowledge check
-5. [ ] Summary
+[Return Readme](../README.md)
+
+1. [x] Introduction
+2. [x] How to manage a successful InnerSource program
+3. [x] Exercise - InnerSource fundamentals
+4. [x] Knowledge check
+5. [x] Summary
 
 ## What is InnerSource?
 
@@ -33,6 +35,7 @@
 - **Admin**
 
 ### Than...
+
 - Create discoverable repositories
 - Add a README file
 - Manage projects on GitHub

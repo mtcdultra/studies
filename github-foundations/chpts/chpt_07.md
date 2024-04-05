@@ -1,5 +1,6 @@
 # Introduction to GitHub Copilot
 
+[Return Readme](../README.md)
 
 1. [x] Introduction
 2. [x] GitHub Copilot, your AI pair programmer
@@ -8,11 +9,9 @@
 5. [x] Knowledge check
 6. [x] Summary
 
-
 ## GitHub Copilot, your AI pair programmer
 
 - GitHub Copilot is a service that provides you with an AI pair programmer that works with all of the popular programming languages and dramatically accelerates overall developer productivity
-
 
 ### GitHub Copilot features
 
@@ -21,8 +20,8 @@
 - AI-generated answers about documentation
 - Copilot for the command line interface (CLI)
 
-
 ### GitHub Copilot Business
+
 - Copilot Business allows you to control who can use GitHub Copilot in your company
 - Available through:
   - Personal accounts
@@ -30,6 +29,6 @@
   - Enterprise accounts
 
 ### GitHub Copilot Enterprise
+
 - Available for organizations through GitHub Enterprise Cloud
 - Includes everything in GitHub Copilot Business as well as an additional layer of personalization for organizations and integration into GitHub
-

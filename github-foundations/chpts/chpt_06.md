@@ -1,5 +1,7 @@
 # Introduction to GitHub's products
 
+[Return Readme](../README.md)
+
 1. [x] Introduction
 2. [x] GitHub accounts and plans
 3. [x] GitHub Mobile and GitHub Desktop
@@ -48,7 +50,6 @@
 | **Support**                     | Community   | email      | email       | 24/7              |
 
 ## GitHub Mobile and GitHub Desktop
-
 
 ## GitHub billing
 
