@@ -16,4 +16,4 @@
 | [AZ-900](ms-az-900.md)                              |          |
 | [AZ-900 Detailed](ms-az-900-d.md)                   |          |
 | [AI-900 Detailed](ms-ai-900-d.md)                   |          |
-| [GitHub Foundations](/github-foundations/README.md) |          |
+| [GitHub Foundations](/github-foundations/readme.md) |          |
