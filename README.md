@@ -7,6 +7,7 @@
 | [NodeJS](nodejs.md) | Created a small application using Express (REST API) saving the data in a JSON file |
 | [Scrum](scrum.md)   |                                                                                     |
 | [Bash](bash.md)     |                                                                                     |
+| [Markdown](markdown.md)     |                                                                                     |
 
 ## Microsoft Studies
 
